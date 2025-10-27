@@ -6,6 +6,7 @@ import MusicaComponent from './components/MusicaComponent.vue'
 import { createRouter,createWebHistory } from 'vue-router'
 import ParImpar from './components/ParImpar.vue'
 import PropiedadConmutada from './components/PropiedadConmutada.vue'
+import MetodosFilters from './components/MetodosFilters.vue'
 
 //UN ARRAY CON LAS RUTAS DE NAVEGACION
 const myRoutes=[
@@ -16,6 +17,7 @@ const myRoutes=[
     {path:"/directivas",component:DirectivasComponent},
     {path:"/parimpar",component:ParImpar},
     {path:"/propiedadconmu",component:PropiedadConmutada},
+    {path:"/metodosfilters",component:MetodosFilters},
 ]
 
 //CREAMOS UNA VARIBALE PARA EL ROUTER INDICANDO EL TIPO DE NAVEGACION Y LAS RUTAS
