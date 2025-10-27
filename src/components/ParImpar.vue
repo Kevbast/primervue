@@ -5,7 +5,7 @@
    <!-- CONDICIONALES DENTRO DE LA ETIQUETA -->
   <h3 v-if="numero %2==0" style="color: greenyellow;">Par</h3>
   <h3 v-else-if="numero %2 != 0" style="color: red;">Impar</h3>
-  <button @click="nuevoNum()">Generar</button>
+  <button @click="nuevoNum()">Generar num</button>
 
 </template>
 
@@ -19,7 +19,8 @@ data(){
 },
 methods:{
     nuevoNum(){
-        
+        this.numero= Math.floor(Math.random()*100);
+        console.log(this.numero);
     }
 }
 }
