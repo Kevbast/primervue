@@ -19,7 +19,7 @@ data(){
 },
 methods:{
     nuevoNum(){
-        this.numero= Math.floor(Math.random()*100);
+        this.numero= Math.floor((Math.random()*100)+1);
         console.log(this.numero);
     }
 }
